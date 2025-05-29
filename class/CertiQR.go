@@ -19,7 +19,7 @@ type CERTIFICADO struct {
 }
 
 func NewCertificado(Name, Nro, Especialidaddes, Idioma, Niveles string) CERTIFICADO {
-	redes := fmt.Sprintln("Telefono:052-58 3000 anexos 3055-3056\nEmail:ceid@unjbg.edu.pe\nFacebook:facebook.com/@CEIDUNJBG\n🌐ceid.unjbg.edu.pe ")
+	redes := ":D"
 	fmt.Println(len(Nro))
 	if len(Nro) < 3 {
 		for i := len(Nro); i <= 3; i++ {
@@ -50,46 +50,46 @@ func (a CERTIFICADO) StringFormtaQR() string {
 	case "Regular":
 		if a.Idioma == "Inglés CEFR" {
 			nivel := strings.Split(a.Niveles, " ")
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\nNivel %s: %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, nivel[0], nivel[1], a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\nNivel %s: %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, nivel[0], nivel[1], a.Redes)
 			return generar
 		} else {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\nNivel %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Niveles, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\nNivel %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Niveles, a.Redes)
 			return generar
 		}
 
 	case "Suficiencia":
 		if a.Idioma == "Inglés CEFR" {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
 			return generar
 		} else {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
 			return generar
 		}
 
 	case "Proficiencia":
 		if a.Idioma == "Inglés CEFR" {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
 			return generar
 		} else {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
 			return generar
 		}
 
 	case "Maestria":
 		if a.Idioma == "Inglés CEFR" {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
 			return generar
 		} else {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
 			return generar
 		}
 
 	case "Taller":
 		if a.Idioma == "Inglés CEFR" {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
 			return generar
 		} else {
-			generar := fmt.Sprintf("EMITIDO POR CEID - UNJBG\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
+			generar := fmt.Sprintf("\nN° %s - %s\nNombre:%s\n%sCertificado de Idioma - %s%s\n%s - %s\n%s", a.Nro, yearString, a.Name, bandera, a.Idioma, bandera, a.Especialidades, a.Idioma, a.Redes)
 			return generar
 		}
 
